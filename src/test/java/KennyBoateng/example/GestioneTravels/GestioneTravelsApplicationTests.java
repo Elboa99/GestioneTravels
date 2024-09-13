@@ -1,4 +1,4 @@
-package com.example.GestioneTravels;
+package KennyBoateng.example.GestioneTravels;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

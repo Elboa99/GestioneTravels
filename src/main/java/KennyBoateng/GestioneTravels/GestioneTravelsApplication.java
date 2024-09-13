@@ -1,4 +1,4 @@
-package com.example.GestioneTravels;
+package KennyBoateng.GestioneTravels;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
