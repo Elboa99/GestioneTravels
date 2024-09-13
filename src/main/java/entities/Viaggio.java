@@ -23,10 +23,15 @@ public class Viaggio {
     private String stato;
 
 
+
     public Viaggio(String destinazione, LocalDate data, String stato) {
         this.destinazione = destinazione;
         this.data = data;
         this.stato = stato;
+
     }
+
+
+
 }
 
