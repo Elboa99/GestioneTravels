@@ -34,7 +34,7 @@ public class DipendenteService {
                 .orElseThrow(() -> new NotFoundException("Dipendente con ID " + id + " non trovato"));
     }
 
-    // Update an employee by ID
+
     public Dipendente updateDipendenteById(UUID id, Dipendente updatedData) {
         Dipendente dipendente = getEmployeeById(id);
 
@@ -43,6 +43,11 @@ public class DipendenteService {
         dipendente.setEmail(updatedData.getEmail());
         dipendente.setAvatar(updatedData.getAvatar());
 
+        return dipendenteRepository.save(dipendente);
+    }
+
+
+    public Dipendente saveDipendente(Dipendente dipendente) {
         return dipendenteRepository.save(dipendente);
     }
 
