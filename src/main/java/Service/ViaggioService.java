@@ -1,7 +1,7 @@
 package Service;
 
+import Exceptions.NotFoundException;
 import Repositories.RepositoryViaggio;
-import Repositories.ViaggioRepository;
 import entities.Viaggio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +13,7 @@ import java.util.UUID;
 public class ViaggioService {
 
     @Autowired
-    private ViaggioRepository viaggioRepository;
+    private RepositoryViaggio viaggioRepository;
 
     // Ottenimento di tutti i viaggi
 
